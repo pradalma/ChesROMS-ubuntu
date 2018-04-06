@@ -19,16 +19,16 @@ start bash
 type FROM http://madiris.altervista.org/?p=248, with edits.
 
 Install subversion
-sudo apt-get install subversion
+       sudo apt-get install subversion
 Install make
-sudo apt-get install make
+       sudo apt-get install make
 Install netcdf
-sudo apt-get update
-sudo apt-get install libnetcdf-dev netcdf-bin libnetcdff-dev
+       sudo apt-get update
+       sudo apt-get install libnetcdf-dev netcdf-bin libnetcdff-dev
 Install compilers:
-sudo apt-get install cpp g++ gfortran
+       sudo apt-get install cpp g++ gfortran
 install mpi
-sudo apt-get install libopenmpi-dev openmpi-bin
+       sudo apt-get install libopenmpi-dev openmpi-bin
 
 
 mkdir romsdir
