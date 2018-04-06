@@ -11,6 +11,9 @@ Copy
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 Restart your computer when prompted.
 
+
+INSTALL PREREQUISITES
+
 Install vcXsrv
 create shortcut to vcXsrv into shell:startup
 export DISPLAY=localhost:0.0 (add to bashrc)
@@ -18,28 +21,33 @@ export DISPLAY=localhost:0.0 (add to bashrc)
 start bash
 type FROM http://madiris.altervista.org/?p=248, with edits.
 
-Install subversion
+       Install subversion
        sudo apt-get install subversion
-Install make
+       Install make
        sudo apt-get install make
-Install netcdf
+       Install netcdf
        sudo apt-get update
        sudo apt-get install libnetcdf-dev netcdf-bin libnetcdff-dev
-Install compilers:
+       Install compilers:
        sudo apt-get install cpp g++ gfortran
-install mpi
+       install mpi
        sudo apt-get install libopenmpi-dev openmpi-bin
 
+MKDIR NEW ROMS DIRECTORY
 
-mkdir romsdir
-svn checkout --username pradal https://www.myroms.org/svn/src/trunk romsdir
+       mkdir romsdir
+       svn checkout --username pradal https://www.myroms.org/svn/src/trunk romsdir
 
 (remember password...)
 
-in compiler script, set export USE_NETCDF4 ON
-export NF_CONFIG=/usr/bin/nf-config
-export NETCDF_INCDIR=/usr/include
-check paths to netcdf /usr/include, /usr/bin/, /usr/lib
+EDIT COMPILER SCRIPT
+
+in compiler script, 
+
+       set export USE_NETCDF4 ON
+       export NF_CONFIG=/usr/bin/nf-config
+       export NETCDF_INCDIR=/usr/include
+       check paths to netcdf /usr/include, /usr/bin/, /usr/lib
 
 
 
