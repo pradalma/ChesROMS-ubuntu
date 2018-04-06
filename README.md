@@ -15,11 +15,12 @@ Restart your computer when prompted.
 INSTALL PREREQUISITES
 
 Install vcXsrv
-create shortcut to vcXsrv into shell:startup
-export DISPLAY=localhost:0.0 (add to bashrc)
+
+       create shortcut to vcXsrv into shell:startup     
+       export DISPLAY=localhost:0.0 (add to bashrc)
 
 start bash
-type FROM http://madiris.altervista.org/?p=248, with edits.
+(FROM http://madiris.altervista.org/?p=248, with edits).
 
        Install subversion
        sudo apt-get install subversion
