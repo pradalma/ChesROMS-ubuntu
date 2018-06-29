@@ -28,6 +28,7 @@ start bash
        sudo apt-get install make
        Install netcdf
        sudo apt-get update
+       sudo apt-get install libcurl3
        sudo apt-get install libnetcdf-dev netcdf-bin libnetcdff-dev
        Install compilers:
        sudo apt-get install cpp g++ gfortran
