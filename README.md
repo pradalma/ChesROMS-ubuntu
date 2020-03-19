@@ -58,7 +58,7 @@ HOW TO BUILD
      with ROMS_APPLICATION set to new test name
      MY_ROOT_DIR set to new testdir name
           
-     execute  ./chesapeake.build.bash or ./test2mpi.build.bash
+     execute  ./build.bash or ./test2mpi.build.bash
      
 
 
